@@ -1,0 +1,35 @@
+{
+  "name": "DBATOOLKIT",
+  "author": "Renato Barros",
+  "version": "3.2.0",
+  "topics": 35,
+  "oracle": 15,
+  "sqlserver": 7,
+  "postgresql": 7,
+  "mysql": 6,
+  "source": "captura pública fornecida pelo usuário",
+  "release": "Admin Preview",
+  "changes": [
+    "Painel administrativo completo para validação",
+    "Dashboard com métricas reais do conteúdo",
+    "Lista pesquisável dos 35 tópicos",
+    "Editor de rascunhos local",
+    "Perfil profissional",
+    "Exportação de conteúdo e rascunhos em JSON",
+    "Configurações demonstrativas",
+    "Nenhuma alteração no portal público"
+  ],
+  "admin_preview": {
+    "password": "DBATOOLKIT",
+    "views": [
+      "Dashboard",
+      "Conteúdo",
+      "Novo tópico",
+      "Perfil",
+      "Backup",
+      "Configurações"
+    ],
+    "storage": "localStorage",
+    "public_content_unchanged": true
+  }
+}
