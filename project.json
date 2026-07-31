@@ -1,14 +1,14 @@
 {
   "name": "DBATOOLKIT",
   "author": "Renato Barros",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "topics": 35,
   "oracle": 15,
   "sqlserver": 7,
   "postgresql": 7,
   "mysql": 6,
   "source": "captura pública fornecida pelo usuário",
-  "release": "Realistic Native Database Terminals",
+  "release": "Final Clean Enterprise Release",
   "changes": [
     "Painel administrativo completo para validação",
     "Dashboard com métricas reais do conteúdo",
@@ -73,5 +73,18 @@
       "html_dashboard_tables": false,
       "fixed_width_output": true
     }
+  },
+  "identity": {
+    "project": "DBATOOLKIT",
+    "author": "Renato Barros",
+    "company": "Barros & Barros Consultoria e Suporte",
+    "portal": "https://barros.inf.br/",
+    "project_url": "https://rsbarros43.github.io/DBATOOLKIT/",
+    "email": "renato.barros@barros.inf.br"
+  },
+  "sanitization": {
+    "legacy_brand_references": 0,
+    "legacy_company_references": 0,
+    "legacy_terminal_email_references": 0
   }
 }

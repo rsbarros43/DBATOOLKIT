@@ -82,3 +82,16 @@ Agora cada tecnologia apresenta saída monoespaçada semelhante ao cliente real:
 
 Inclui cabeçalhos, separadores, alinhamento fixo, mensagens de quantidade de linhas
 e retorno ao prompt após a execução.
+
+
+## v4.0.2 — Final Clean Enterprise Release
+
+Revisão completa de identidade antes da publicação no GitHub Pages:
+
+- remoção de referências de identidade legada;
+- remoção de referências da empresa anterior;
+- URL oficial do projeto atualizada;
+- portal institucional definido como `https://barros.inf.br/`;
+- e-mail atualizado para `renato.barros@barros.inf.br`;
+- metadados Open Graph, canonical e JSON-LD revisados;
+- terminais realistas, Admin e rodapé B&B preservados.
