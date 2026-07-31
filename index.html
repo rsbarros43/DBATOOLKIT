@@ -333,6 +333,43 @@
       <article class="topic-view hidden" id="topicView"></article>
       <div class="search-results hidden" id="searchResults"></div>
     </div>
+
+    <!-- B&B ENTERPRISE FOOTER -->
+    <footer class="bb-enterprise-footer" aria-label="Informações institucionais">
+      <div class="bb-footer-glow" aria-hidden="true"></div>
+
+      <div class="bb-footer-inner">
+        <div class="bb-footer-brand">
+          <div class="bb-footer-logo" aria-hidden="true">B&amp;B</div>
+          <div class="bb-footer-heading">
+            <strong>Desenvolvido por Renato Barros</strong>
+            <span>Barros &amp; Barros Consultoria e Suporte</span>
+          </div>
+        </div>
+
+        <div class="bb-footer-specialties" aria-label="Especialidades">
+          <span><i>🗄️</i> Oracle Database</span>
+          <span><i>🖥️</i> SQL Server</span>
+          <span><i>🐘</i> PostgreSQL</span>
+          <span><i>🐬</i> MySQL</span>
+          <span><i>⚙️</i> DBRE</span>
+          <span><i>🏗️</i> Infrastructure</span>
+          <span><i>🔄</i> DevOps</span>
+          <span><i>🛡️</i> Network/Security</span>
+          <span><i>☁️</i> Multi-Cloud Technologies</span>
+        </div>
+
+        <p class="bb-footer-description">
+          Plataforma desenvolvida para administração de bancos de dados, documentação técnica,
+          automação, estudos e demonstração de boas práticas em ambientes corporativos.
+        </p>
+
+        <div class="bb-footer-copyright">
+          © 2026 Barros &amp; Barros Consultoria e Suporte. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
   </main>
 
   <!-- TOAST -->
@@ -763,9 +800,68 @@
     <div class="admin-toast hidden" id="adminToast"></div>
   </section>
 
+
+  <!-- INTERACTIVE ENTERPRISE COMMAND SIMULATOR -->
+  <div class="command-terminal-overlay hidden" id="commandTerminalOverlay" aria-hidden="true">
+    <div class="command-terminal-backdrop" data-terminal-close></div>
+
+    <section class="command-terminal-window" role="dialog" aria-modal="true" aria-labelledby="commandTerminalTitle">
+      <header class="command-terminal-header">
+        <div class="command-terminal-lights" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="command-terminal-identity">
+          <strong id="commandTerminalTitle">Database Command Simulator</strong>
+          <span id="commandTerminalSubtitle">Ambiente demonstrativo</span>
+        </div>
+
+        <div class="command-terminal-status">
+          <span class="terminal-demo-badge">READ ONLY DEMO</span>
+          <span class="terminal-connected"><i></i> Connected</span>
+        </div>
+
+        <button class="command-terminal-close" type="button" data-terminal-close aria-label="Fechar terminal">×</button>
+      </header>
+
+      <div class="command-terminal-connection">
+        <span><strong>Plataforma:</strong> <b id="terminalPlatform">Oracle</b></span>
+        <span><strong>Database:</strong> <b id="terminalDatabase">ORCLPDB1</b></span>
+        <span><strong>Host:</strong> <b id="terminalHost">oracle19c.lab.local</b></span>
+        <span><strong>Sessão:</strong> <b id="terminalSession">SYSDBA</b></span>
+      </div>
+
+      <div class="command-terminal-toolbar">
+        <button type="button" id="terminalRunButton">▶ Executar</button>
+        <button type="button" id="terminalReplayButton">↻ Executar novamente</button>
+        <button type="button" id="terminalClearButton">⌫ Limpar</button>
+        <button type="button" id="terminalCopyButton">⧉ Copiar comando</button>
+      </div>
+
+      <div class="command-terminal-screen" id="commandTerminalScreen">
+        <div class="terminal-command-line">
+          <span class="terminal-runtime-prompt" id="terminalRuntimePrompt">SQL&gt;</span>
+          <pre id="terminalRuntimeCommand"></pre>
+        </div>
+
+        <div class="terminal-runtime-output" id="terminalRuntimeOutput">
+          <p class="terminal-runtime-muted">Clique em “Executar” para iniciar a simulação.</p>
+        </div>
+      </div>
+
+      <footer class="command-terminal-footer">
+        <span id="terminalExecutionStatus">READY</span>
+        <span id="terminalExecutionTime">Tempo: --</span>
+        <span id="terminalExecutionRows">Linhas: --</span>
+        <span>Execução fictícia para demonstração técnica</span>
+      </footer>
+    </section>
+  </div>
+
   <script src="content.v3.2.0.js?v=320"></script>
   <script src="app.v3.2.0.js?v=320"></script>
   <script src="recovery.v3.2.0.js?v=320"></script>
   <script src="admin.v3.2.0.js?v=320"></script>
+  <script src="terminal-simulator.v4.0.0.js?v=400"></script>
 </body>
 </html>

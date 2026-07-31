@@ -1,14 +1,14 @@
 {
   "name": "DBATOOLKIT",
   "author": "Renato Barros",
-  "version": "3.2.0",
+  "version": "4.0.1",
   "topics": 35,
   "oracle": 15,
   "sqlserver": 7,
   "postgresql": 7,
   "mysql": 6,
   "source": "captura pública fornecida pelo usuário",
-  "release": "Admin Preview",
+  "release": "Realistic Native Database Terminals",
   "changes": [
     "Painel administrativo completo para validação",
     "Dashboard com métricas reais do conteúdo",
@@ -31,5 +31,47 @@
     ],
     "storage": "localStorage",
     "public_content_unchanged": true
+  },
+  "footer": {
+    "name": "B&B Enterprise Footer v1.0",
+    "position": "Final do conteúdo principal",
+    "enterprise_edition_label": false,
+    "specialties": [
+      "Oracle Database",
+      "SQL Server",
+      "PostgreSQL",
+      "MySQL",
+      "DBRE",
+      "Infrastructure",
+      "DevOps",
+      "Network/Security",
+      "Multi-Cloud Technologies"
+    ]
+  },
+  "terminal_simulator": {
+    "platforms": [
+      "Oracle",
+      "SQL Server",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "execution": "Fictitious read-only demonstration",
+    "trigger": "Abrir Terminal button on each command",
+    "features": [
+      "Platform-specific prompt",
+      "Command-sensitive fictional results",
+      "Tables and execution metrics",
+      "Run, replay, clear and copy",
+      "No real database connection"
+    ],
+    "rendering": {
+      "style": "Native database command-line clients",
+      "oracle": "SQL*Plus",
+      "sqlserver": "sqlcmd",
+      "postgresql": "psql",
+      "mysql": "mysql client",
+      "html_dashboard_tables": false,
+      "fixed_width_output": true
+    }
   }
 }
